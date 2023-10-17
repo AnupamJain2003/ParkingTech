@@ -76,10 +76,7 @@ WSGI_APPLICATION = 'auth.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.config(default='postgresql://anupam:Lu79VzI4ENoN8PK6b_RpGg@vague-buzzard-6765.8nk.cockroachlabs.cloud:26257/ParkingTech?sslmode=verify-full')
-    }
-
-
+    'default': dj_database_url.config(default='postgresql://Anupam:REVEAL_PASSWORD@parkingtech-12447.7tt.cockroachlabs.cloud:26257/ParkingTech?sslmode=verify-full')}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
