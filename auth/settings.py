@@ -78,12 +78,12 @@ WSGI_APPLICATION = 'auth.wsgi.application'
 DATABASES = {
   'default': {
     'ENGINE': 'django.db.backends.postgresql',
-    'NAME': 'neondb',
-    'USER': 'anupamayushij',
-    'PASSWORD': 'ltwAJeCrva95',
-    'HOST': 'ep-icy-silence-37416165.us-east-2.aws.neon.tech',
+    'NAME': 'ParkingTech',
+    'USER': 'Anupam',
+    'PASSWORD': 'Diana@2509',
+    'HOST': 'localhost',
     'PORT': '5432',
-    'OPTIONS': {'sslmode': 'require'},
+    
   }
 }
 # Password validation
