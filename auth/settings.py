@@ -76,15 +76,9 @@ WSGI_APPLICATION = 'auth.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'auth',
-        'USER': 'postgres',
-        'PASSWORD': 'mehul1234',
-        'HOST':'localhost',
-        'PORT':'5433',
+    'default': dj_database_url.config(default='postgresql://anupam:Lu79VzI4ENoN8PK6b_RpGg@vague-buzzard-6765.8nk.cockroachlabs.cloud:26257/ParkingTech?sslmode=verify-full')
     }
-}
+
 
 
 # Password validation
