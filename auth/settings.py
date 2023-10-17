@@ -76,8 +76,16 @@ WSGI_APPLICATION = 'auth.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.config(default='postgresql://Anupam:REVEAL_PASSWORD@parkingtech-12447.7tt.cockroachlabs.cloud:26257/ParkingTech?sslmode=verify-full')}
-
+  'default': {
+    'ENGINE': 'django.db.backends.postgresql',
+    'NAME': 'neondb',
+    'USER': 'anupamayushij',
+    'PASSWORD': 'ltwAJeCrva95',
+    'HOST': 'ep-icy-silence-37416165.us-east-2.aws.neon.tech',
+    'PORT': '5432',
+    'OPTIONS': {'sslmode': 'require'},
+  }
+}
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
